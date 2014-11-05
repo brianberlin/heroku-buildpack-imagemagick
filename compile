@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+echo "-----> Installing ImageMagick"
+cd $1
+curl -OLs https://raw.githubusercontent.com/brianberlin/imagemagick-binary/master/imagemagick.tar.gz
+mkdir -p vendor/imagemagick
+tar -C vendor/imagemagick -xvf imagemagick.tar.gz
